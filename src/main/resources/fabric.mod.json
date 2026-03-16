@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "obviousredstone",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "ObviousRedStone",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,30 +12,30 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/obviousredstone/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"yuxin.obviousredstone.ObviousRedStone"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"yuxin.obviousredstone.ObviousRedStoneClient"
+		],
+		"fabric-datagen": [
+			"yuxin.obviousredstone.ObviousRedStoneDataGenerator"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"obviousredstone.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "obviousredstone.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.18.2",
+		"fabricloader": ">=0.18.4",
 		"minecraft": "~1.21.11",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
