@@ -14,23 +14,18 @@ public final class testBlock {
     private testBlock() {
     }
 
-    public static final Block CUSTOM_BLOCK = registerBlock("custom_block",
-            new Block(BlockBehaviour.Properties.of()
-                    .setId(ResourceKey.create(Registries.BLOCK,
-                            Identifier.fromNamespaceAndPath("obviousredstone", "custom_block")))));
+    public static final Block CUSTOM_BLOCK = register("custom_block");
+    public static final Block FAN_BLOCK = register("fan_block");
 
-    public static final Item CUSTOM_BLOCK_ITEM = registerBlockItem("custom_block", CUSTOM_BLOCK);
-
-    private static Block registerBlock(String path, Block block) {
+    public static Block register(String path) {
         Identifier id = Identifier.fromNamespaceAndPath("obviousredstone", path);
-        return Registry.register(BuiltInRegistries.BLOCK, id, block);
-    }
-
-    private static Item registerBlockItem(String path, Block block) {
-        Identifier id = Identifier.fromNamespaceAndPath("obviousredstone", path);
-        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, id);
-        return Registry.register(BuiltInRegistries.ITEM, id,
-                new BlockItem(block, new Item.Properties().setId(key)));
+        ResourceKey<Block> blockKey = ResourceKey.create(Registries.BLOCK, id);
+        Block block = Registry.register(BuiltInRegistries.BLOCK, id,
+                new Block(BlockBehaviour.Properties.of().setId(blockKey)));
+        ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, id);
+        Registry.register(BuiltInRegistries.ITEM, id,
+                new BlockItem(block, new Item.Properties().setId(itemKey)));
+        return block;
     }
 
     public static void initialize() {
