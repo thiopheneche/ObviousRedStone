@@ -1,6 +1,7 @@
 package yuxin.obviousredstone;
 
 import net.fabricmc.api.ModInitializer;
+import yuxin.obviousredstone.Items.FanBlock;
 import yuxin.obviousredstone.Items.testBlock;
 import yuxin.obviousredstone.Items.testItem;
 
@@ -22,6 +23,7 @@ public class ObviousRedStone implements ModInitializer {
 		// Proceed with mild caution.
 		testItem.initialize();
 		testBlock.initialize();
+		FanBlock.initialize();
 
 		LOGGER.info("Hello Fabric world!");
 		LOGGER.info("Registered custom item: {}", MOD_ID + ":custom_item");
