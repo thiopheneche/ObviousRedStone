@@ -2,5 +2,7 @@
     "config.jade.plugin_obviousredstone.redstone_power": "红石线能量等级",
     "tooltip.obviousredstone.redstone_power": "能量: %s",
     "block.obviousredstone.custom_block": "自定义方块",
+    "item.obviousredstone.custom_block": "自定义方块",
+    "item.obviousredstone.fan_block": "风扇方块",
     "item.obviousredstone.custom_item": "自定义物品"
 }
