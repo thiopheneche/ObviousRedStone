@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "obviousredstone:block/custom_block"
+        }
+    }
+}

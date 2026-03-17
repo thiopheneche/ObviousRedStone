@@ -16,6 +16,7 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	maven { url = "https://api.modrinth.com/maven" }
 }
 
 loom {
@@ -45,6 +46,9 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 	
+	// jade_version example: 15.10.0+fabric
+    // Visit https://modrinth.com/mod/jade/versions?l=fabric to get the latest version
+    // modImplementation "maven.modrinth:jade:${project.jade_version}"
 }
 
 processResources {

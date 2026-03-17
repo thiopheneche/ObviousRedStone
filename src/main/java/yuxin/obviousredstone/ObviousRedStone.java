@@ -1,6 +1,8 @@
 package yuxin.obviousredstone;
 
 import net.fabricmc.api.ModInitializer;
+import yuxin.obviousredstone.Items.testBlock;
+import yuxin.obviousredstone.Items.testItem;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +20,10 @@ public class ObviousRedStone implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		testItem.initialize();
+		testBlock.initialize();
 
 		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Registered custom item: {}", MOD_ID + ":custom_item");
 	}
 }
