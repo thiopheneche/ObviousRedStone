@@ -24,6 +24,11 @@ public final class testBlock {
                     .setId(ResourceKey.create(Registries.BLOCK,
                             Identifier.fromNamespaceAndPath("obviousredstone", "fan_block")))));
 
+        public static final Block JIAO_BLOCK = register("jiao_block",
+            new Block(BlockBehaviour.Properties.of()
+                    .setId(ResourceKey.create(Registries.BLOCK,
+                            Identifier.fromNamespaceAndPath("obviousredstone", "fan_block")))));
+
     private static Block register(String path, Block block) {
         Identifier id = Identifier.fromNamespaceAndPath("obviousredstone", path);
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, id);
