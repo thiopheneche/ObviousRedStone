@@ -2,5 +2,6 @@
     "config.jade.plugin_obviousredstone.redstone_power": "Redstone Wire Power",
     "tooltip.obviousredstone.redstone_power": "Power: %s",
     "block.obviousredstone.custom_block": "Custom Block",
-    "item.obviousredstone.custom_item": "Custom Item"
+    "item.obviousredstone.custom_item": "Custom Item",
+    "entity.obviousredstone.test_entity": "Zhu Ge"
 }

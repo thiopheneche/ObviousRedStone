@@ -48,7 +48,7 @@ dependencies {
 	
 	// jade_version example: 15.10.0+fabric
     // Visit https://modrinth.com/mod/jade/versions?l=fabric to get the latest version
-    // modImplementation "maven.modrinth:jade:${project.jade_version}"
+    modImplementation "maven.modrinth:jade:${project.jade_version}"
 }
 
 processResources {
