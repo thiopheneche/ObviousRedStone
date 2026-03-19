@@ -3,5 +3,7 @@
     "tooltip.obviousredstone.redstone_power": "Power: %s",
     "block.obviousredstone.custom_block": "Custom Block",
     "item.obviousredstone.custom_item": "Custom Item",
-    "entity.obviousredstone.test_entity": "Zhu Ge"
+    "entity.obviousredstone.test_entity": "Zhu Ge",
+    "entity.obviousredstone.jiao_entity": "Xiao Jiao",
+    "item.obviousredstone.jiao_spawn_egg": "XIao Jiao SpawnEgg"
 }

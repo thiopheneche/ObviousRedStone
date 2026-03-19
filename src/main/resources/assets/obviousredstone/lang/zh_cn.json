@@ -3,8 +3,9 @@
     "tooltip.obviousredstone.redstone_power": "能量: %s",
     "block.obviousredstone.custom_block": "自定义方块",
     "item.obviousredstone.custom_block": "自定义方块",
-    "item.obviousredstone.fan_block": "风扇方块",
+    "item.obviousredstone.fan_block": "范方块",
     "item.obviousredstone.custom_item": "自定义物品",
     "entity.obviousredstone.test_entity": "猪哥",
-    "entity.obviousredstone.jiao_entity": "小焦"
+    "entity.obviousredstone.jiao_entity": "小焦",
+    "item.obviousredstone.jiao_spawn_egg": "小焦刷怪蛋"
 }
