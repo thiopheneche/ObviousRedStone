@@ -2,8 +2,11 @@
     "config.jade.plugin_obviousredstone.redstone_power": "Redstone Wire Power",
     "tooltip.obviousredstone.redstone_power": "Power: %s",
     "block.obviousredstone.custom_block": "Custom Block",
+    "block.obviousredstone.fan_block": "Fan Block",
     "item.obviousredstone.custom_item": "Custom Item",
-    "entity.obviousredstone.test_entity": "Zhu Ge",
-    "entity.obviousredstone.jiao_entity": "Xiao Jiao",
-    "item.obviousredstone.jiao_spawn_egg": "XIao Jiao SpawnEgg"
+    "item.obviousredstone.custom_block": "Custom Block",
+    "item.obviousredstone.fan_block": "Fan Block",
+    "entity.obviousredstone.test_entity": "Test Entity",
+    "entity.obviousredstone.jiao_entity": "Jiao Entity",
+    "item.obviousredstone.jiao_spawn_egg": "Jiao Spawn Egg"
 }
