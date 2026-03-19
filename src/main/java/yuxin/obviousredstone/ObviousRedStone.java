@@ -6,6 +6,7 @@ import yuxin.obviousredstone.Items.testBlock;
 import yuxin.obviousredstone.Items.testItem;
 import yuxin.obviousredstone.entities.testEntities;
 import yuxin.obviousredstone.entities.testEntity;
+import yuxin.obviousredstone.entities.JiaoEntity;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,9 +28,12 @@ public class ObviousRedStone implements ModInitializer {
 		testBlock.initialize();
 		testEntities.initialize();
 		FabricDefaultAttributeRegistry.register(testEntities.TEST_ENTITY, testEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(testEntities.JIAO_ENTITY, JiaoEntity.createAttributes());
+
 
 		LOGGER.info("Hello Fabric world!");
 		LOGGER.info("Registered custom item: {}", MOD_ID + ":custom_item");
 		LOGGER.info("Registered test entity: {}", MOD_ID + ":test_entity");
+		LOGGER.info("Registered jiao entity: {}", MOD_ID + ":jiao_entity"); // 添加一条日志方便调试
 	}
 }

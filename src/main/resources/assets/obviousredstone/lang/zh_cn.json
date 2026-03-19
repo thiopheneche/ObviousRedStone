@@ -5,5 +5,6 @@
     "item.obviousredstone.custom_block": "自定义方块",
     "item.obviousredstone.fan_block": "风扇方块",
     "item.obviousredstone.custom_item": "自定义物品",
-    "entity.obviousredstone.test_entity": "猪哥"
+    "entity.obviousredstone.test_entity": "猪哥",
+    "entity.obviousredstone.jiao_entity": "小焦"
 }
